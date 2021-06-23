@@ -1,0 +1,31 @@
+{
+  "name": "backend-projeto-apollo",
+  "version": "1.0.0",
+  "description": "Backend do Projeto Apollo, software de gestão financeira.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barbosagabriel17/backend-projeto-apollo.git"
+  },
+  "author": "Gabriel Barbosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barbosagabriel17/backend-projeto-apollo/issues"
+  },
+  "homepage": "https://github.com/barbosagabriel17/backend-projeto-apollo#readme",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
