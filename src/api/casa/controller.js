@@ -28,8 +28,8 @@ const createCasa = async (req, res) => {
 const obterCasas = async (req, res) => {
 
     try{
-        const bairros = await Casa.find();
-        res.json(bairros)
+        const casas = await Casa.find();
+        res.json(casas)
     } catch (err){
         res.status(400).json({message: err});
     }

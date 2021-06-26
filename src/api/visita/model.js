@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const visitaSchema = new mongoose.Schema({
-    dataAgendamento: {
+    data: {
         type:Date,
         required: true
     },

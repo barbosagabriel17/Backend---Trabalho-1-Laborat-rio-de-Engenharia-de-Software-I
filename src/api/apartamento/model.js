@@ -38,7 +38,7 @@ const apartamentoSchema = new mongoose.Schema({
         max: 256
     },
     idBairro: {
-        type: String,
+        type: mongoose.ObjectId,
         required: true,
         min: 6,
         max: 256
@@ -52,7 +52,7 @@ const apartamentoSchema = new mongoose.Schema({
         required: true,
     },
     portaria24h: {
-        type: Number,
+        type: Boolean,
         required: true,
     },
 });
