@@ -1,4 +1,4 @@
-const router = require('express').Router();
+const router = require('../../services/router/index')();
 
 const { createVisita, obterVisitas } = require('./controller');
 
