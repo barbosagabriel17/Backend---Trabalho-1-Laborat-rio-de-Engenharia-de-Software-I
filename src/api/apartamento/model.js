@@ -38,7 +38,13 @@ const apartamentoSchema = new mongoose.Schema({
         max: 256
     },
     idBairro: {
-        type: mongoose.ObjectId,
+        type: String,
+        required: true,
+        min: 6,
+        max: 256
+    },
+    descricao: {
+        type: String,
         required: true,
         min: 6,
         max: 256
@@ -48,6 +54,10 @@ const apartamentoSchema = new mongoose.Schema({
         required: true,
     },
     condominio: {
+        type: Number,
+        required: true,
+    },
+    aluguel: {
         type: Number,
         required: true,
     },

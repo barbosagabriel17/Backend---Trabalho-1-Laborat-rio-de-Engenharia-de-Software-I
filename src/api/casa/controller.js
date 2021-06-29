@@ -14,6 +14,8 @@ const createCasa = async (req, res) => {
         endereco: req.body.endereco,
         metros: req.body.metros,
         idBairro: req.body.idBairro,
+        aluguel: req.body.aluguel,
+        descricao: req.body.descricao,
     });
     console.log('ok');
 
@@ -26,7 +28,6 @@ const createCasa = async (req, res) => {
 }
 
 const obterCasas = async (req, res) => {
-
     try{
         const casas = await Casa.find();
         res.json(casas)

@@ -38,7 +38,17 @@ const casaSchema = new mongoose.Schema({
         max: 256
     },
     idBairro: {
-        type: mongoose.ObjectId,
+        type: String,
+        required: true,
+        min: 6,
+        max: 256
+    },
+    aluguel: {
+        type: Number,
+        required: true,
+    },
+    descricao: {
+        type: String,
         required: true,
         min: 6,
         max: 256

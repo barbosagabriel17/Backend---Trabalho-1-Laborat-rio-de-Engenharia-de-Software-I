@@ -14,7 +14,9 @@ const createApartamento = async (req, res) => {
         idBairro: req.body.idBairro,
         andar: req.body.andar,
         condominio: req.body.condominio,
+        aluguel: req.body.aluguel,
         portaria24h: req.body.portaria24h,
+        descricao: req.body.descricao,
     });
     console.log('ok');
 
@@ -27,7 +29,7 @@ const createApartamento = async (req, res) => {
 }
 
 const obterApartamentos = async (req, res) => {
-
+    
     try{
         const apartamentos = await Apartamento.find();
         res.json(apartamentos)
